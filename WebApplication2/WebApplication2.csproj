@@ -285,11 +285,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20191021100405_m1.cs" />
-    <Compile Include="Migrations\20191021100405_m1.designer.cs">
-      <DependentUpon>20191021100405_m1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\DiscosContextModelSnapshot.cs" />
     <Compile Include="Models\DiscosContext.cs" />
     <Compile Include="Models\Disco.cs" />
     <Compile Include="Models\DiscosRepository.cs" />
@@ -352,6 +347,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

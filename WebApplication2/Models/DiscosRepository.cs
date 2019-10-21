@@ -41,13 +41,8 @@ namespace WebApplication2.Models
         
         internal void Save(Disco d)
         {                       
-            DiscosContext context = new DiscosContext();
-
-            Grupo grupo = context.Grupos
-                .Where(g => g.GrupoId == d.GrupoId)
-                .FirstOrDefault();
-
-            d.Grupo = grupo;
+            DiscosContext context = new DiscosContext();            
+            
             context.Discos.Add(d);
             context.SaveChanges();            
 
